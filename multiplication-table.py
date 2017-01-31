@@ -22,15 +22,15 @@ Height of multiplication table: 8
   8  16  24  32  40  48  56  64  72  80
 """
 
-w = input("What is the width of the multiplication table")
-l = input("What is the length of the multiplication table")
+l = input("Width of the multiplication table")
+w = input("Length of the multiplication table")
 a=1
 for i in list(range(1,int(w)+1)):
     print()
     for j in list(range(1, int(l)+1)):
-        if((i*j)>9):
+        if((i*j)>9 and (i*j)=<99):
             print(i*j,sep="", end="  ")
-        elif((i*j)>99):
+        elif((i*j)>99 and (i*j)=<99):
             print(i*j,sep="", end=" ")
         elif((i*j)>999):
             print(i*j,sep="", end="")
