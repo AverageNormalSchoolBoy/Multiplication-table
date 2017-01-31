@@ -28,9 +28,9 @@ a=1
 for i in list(range(1,int(w)+1)):
     print()
     for j in list(range(1, int(l)+1)):
-        if((i*j)>9 and (i*j)=<99):
+        if((i*j)>9 and (i*j)<=99):
             print(i*j,sep="", end="  ")
-        elif((i*j)>99 and (i*j)=<99):
+        elif((i*j)>99 and (i*j)<=99):
             print(i*j,sep="", end=" ")
         elif((i*j)>999):
             print(i*j,sep="", end="")
