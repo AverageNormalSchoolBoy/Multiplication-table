@@ -1,7 +1,4 @@
 """
-while a!=j:
-            print(a*i, " ", end="")
-            a=a+1
 multiplication-table.py
 Author: <Brendan>
 Credit: <list sources used, if any>
