@@ -29,6 +29,6 @@ for i in list(range(1,int(w)+1)):
     for j in list(range(1, int(l)+1)):
         while a!=j:
             print(a*i, " ", end="")
-            a+1=a
+            a=a+1
 
         
