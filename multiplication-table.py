@@ -1,7 +1,7 @@
 """
 multiplication-table.py
 Author: <Brendan>
-Credit: <list sources used, if any>
+Credit: <Ethan>
 Assignment:
 
 Write and submit a Python program that prints a multiplication table. The user 
@@ -30,5 +30,9 @@ for i in list(range(1,int(w)+1)):
     for j in list(range(1, int(l)+1)):
         if((i*j)>9):
             print(i*j,sep="", end="  ")
+        elif((i*j)>99):
+            print(i*j,sep="", end=" ")
+        elif((i*j)>999):
+            print(i*j,sep="", end="")
         else:
             print(i*j, sep="", end="   ")
