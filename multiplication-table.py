@@ -24,9 +24,11 @@ Height of multiplication table: 8
 
 w = input("What is the width of the multiplication table")
 l = input("What is the length of the multiplication table")
-
+a=1
 for i in list(range(1,int(w)+1)):
     for j in list(range(1, int(l)+1)):
-        print(i,j)
+        while a!=j:
+             print(a*i, " ", end="")
+                a+1=a
+
         
-    
