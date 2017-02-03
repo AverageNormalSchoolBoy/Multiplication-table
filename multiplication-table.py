@@ -29,8 +29,8 @@ Height of multiplication table: 8
         else:
 """
 
-l = input("Width of the multiplication table: ")
-w = input("Height of the multiplication table: ")
+l = input("Width of multiplication table: ")
+w = input("Height of multiplication table: ")
 a=1
 for i in list(range(1,int(w)+1)):
     print()
