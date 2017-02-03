@@ -20,6 +20,13 @@ Height of multiplication table: 8
   6  12  18  24  30  36  42  48  54  60
   7  14  21  28  35  42  49  56  63  70
   8  16  24  32  40  48  56  64  72  80
+  if((i*j)>9 and (i*j)<=99):
+            print(i*j,sep="", end="  ")
+        elif((i*j)>99 and (i*j)<=99):
+            print(i*j,sep="", end=" ")
+        elif((i*j)>999):
+            print(i*j,sep="", end="")
+        else:
 """
 
 l = input("Width of the multiplication table: ")
@@ -28,11 +35,4 @@ a=1
 for i in list(range(1,int(w)+1)):
     print()
     for j in list(range(1, int(l)+1)):
-        if((i*j)>9 and (i*j)<=99):
-            print(i*j,sep="", end="  ")
-        elif((i*j)>99 and (i*j)<=99):
-            print(i*j,sep="", end=" ")
-        elif((i*j)>999):
-            print(i*j,sep="", end="")
-        else:
-            print(i*j, sep="", end="   ")
+            print("{0:>3}".format(i*j), sep="", end="   ")
